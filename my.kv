@@ -1,0 +1,29 @@
+<kanteinter>:
+      rows: 3
+      padding: 30
+
+      inpyt_widget: text_input
+      lable_widget: lable
+
+# текст инпут
+      TextInput:
+            id: text_input
+            size_hint: 1, 0.5
+            multilien: False
+            font_size: 20
+#метка
+      Label:
+            id: lable
+            size_hint: 0.5, 1
+            font_size: 25
+            text: '___________________'
+# кнопка
+      FloatLayout:
+            Button:
+                  size_hint: 1 , 0.6
+                  pos_hint: {'center_x': 0.5, 'y': 0.4}
+                  text: 'press to change the sentence'
+                  font_size_hint: 0.3
+
+                  on_release:
+                        root.toy()
